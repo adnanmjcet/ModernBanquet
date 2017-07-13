@@ -300,7 +300,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ModernHallEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="ModernHallEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Bookings" EntityType="Self.Booking" />
           <EntitySet Name="Packages" EntityType="Self.Package" />
           <EntitySet Name="Payments" EntityType="Self.Payment" />
@@ -333,7 +333,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModernHallModelStoreContainer" CdmEntityContainer="ModernHallEntities1">
+        <EntityContainerMapping StorageEntityContainer="ModernHallModelStoreContainer" CdmEntityContainer="ModernHallEntities">
           <EntitySetMapping Name="Bookings">
             <EntityTypeMapping TypeName="ModernHallModel.Booking">
               <MappingFragment StoreEntitySet="Booking">

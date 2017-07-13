@@ -10,7 +10,7 @@ namespace ModernHall.Controllers
     public class BookingController : Controller
     {
         // GET: Booking
-        ModernHallEntities1 dbContext = new ModernHallEntities1();
+        ModernHallEntities dbContext = new ModernHallEntities();
         public ActionResult Index(int? packageType)
         {
             var userID = Session["UserID"];

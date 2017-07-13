@@ -13,10 +13,10 @@ namespace ModernHall
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ModernHallEntities1 : DbContext
+    public partial class ModernHallEntities : DbContext
     {
-        public ModernHallEntities1()
-            : base("name=ModernHallEntities1")
+        public ModernHallEntities()
+            : base("name=ModernHallEntities")
         {
         }
     
