@@ -162,7 +162,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Booking.cs">
-      <DependentUpon>ModernHallEntities.tt</DependentUpon>
+      <DependentUpon>ModernDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountController.cs">
       <SubType>Code</SubType>
@@ -171,42 +171,46 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\UserAccountController.cs" />
-    <Compile Include="Controllers\UserModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BookingModel.cs" />
-    <Compile Include="ModernHallEntities.Context.cs">
+    <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\ModernHall.cs" />
+    <Compile Include="Models\Package.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\PaymentTypetbl.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="ModernDb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModernHallEntities.Context.tt</DependentUpon>
+      <DependentUpon>ModernDb.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModernHallEntities.cs">
+    <Compile Include="ModernDb.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModernHallEntities.tt</DependentUpon>
+      <DependentUpon>ModernDb.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModernHallEntities.Designer.cs">
+    <Compile Include="ModernDb.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModernHallEntities.edmx</DependentUpon>
+      <DependentUpon>ModernDb.edmx</DependentUpon>
     </Compile>
     <Compile Include="Package.cs">
-      <DependentUpon>ModernHallEntities.tt</DependentUpon>
+      <DependentUpon>ModernDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Payment.cs">
-      <DependentUpon>ModernHallEntities.tt</DependentUpon>
+      <DependentUpon>ModernDb.tt</DependentUpon>
     </Compile>
     <Compile Include="PaymentTypetbl.cs">
-      <DependentUpon>ModernHallEntities.tt</DependentUpon>
+      <DependentUpon>ModernDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="sysdiagram.cs">
-      <DependentUpon>ModernHallEntities.tt</DependentUpon>
+      <DependentUpon>ModernDb.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>ModernHallEntities.tt</DependentUpon>
+      <DependentUpon>ModernDb.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -1884,15 +1888,15 @@
     <Content Include="js\toastr\toastr.min.js" />
     <Content Include="js\views\view.contact.js" />
     <Content Include="js\views\view.home.js" />
-    <Content Include="ModernHallEntities.Context.tt">
+    <Content Include="ModernDb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModernHallEntities.edmx</DependentUpon>
-      <LastGenOutput>ModernHallEntities.Context.cs</LastGenOutput>
+      <DependentUpon>ModernDb.edmx</DependentUpon>
+      <LastGenOutput>ModernDb.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ModernHallEntities.tt">
+    <Content Include="ModernDb.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModernHallEntities.edmx</DependentUpon>
-      <LastGenOutput>ModernHallEntities.cs</LastGenOutput>
+      <DependentUpon>ModernDb.edmx</DependentUpon>
+      <LastGenOutput>ModernDb.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1902,12 +1906,12 @@
     <Content Include="css\fonts\star.eot" />
     <Content Include="css\fonts\star.ttf" />
     <Content Include="css\fonts\star.woff" />
-    <EntityDeploy Include="ModernHallEntities.edmx">
+    <EntityDeploy Include="ModernDb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModernHallEntities.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModernDb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="ModernHallEntities.edmx.diagram">
-      <DependentUpon>ModernHallEntities.edmx</DependentUpon>
+    <Content Include="ModernDb.edmx.diagram">
+      <DependentUpon>ModernDb.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

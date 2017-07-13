@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ModernHall;
+using ModernHall.Models;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -6,7 +8,7 @@ namespace ModernHall.Controllers
 {
     public class UserAccountController : Controller
     {
-        ModernHallEntities _dbContext = new ModernHallEntities1();
+        ModernHallEntities1 _dbContext = new ModernHallEntities1();
         // GET: UserAccount
         public ActionResult Index()
         {
