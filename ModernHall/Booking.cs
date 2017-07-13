@@ -26,7 +26,8 @@ namespace ModernHall
         public Nullable<long> CreatedBy { get; set; }
         public Nullable<bool> IsActive { get; set; }
         public int PackageTypeId { get; set; }
-    
+        public Nullable<int> PackageType { get; set; }
+
         public virtual Package Package { get; set; }
         public virtual User User { get; set; }
     }

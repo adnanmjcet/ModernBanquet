@@ -35,9 +35,9 @@ namespace ModernHall.Controllers
                 Location = model.Location,
                 Mobile = model.Mobile,
                 CreatedBy = userID,
-                UserID = userID,
+                UserID = (int)userID,
                 Createdon = DateTime.Now,
-                PackageTypeId = model.PackageType
+                PackageType = model.PackageType
             };
             dbContext.Bookings.Add(booking);
             dbContext.SaveChanges();
