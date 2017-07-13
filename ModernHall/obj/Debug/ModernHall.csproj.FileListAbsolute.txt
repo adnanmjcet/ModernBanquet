@@ -163,3 +163,6 @@ C:\Users\user\Desktop\Modern Banquet Hall\ModernHall\ModernHall\bin\Microsoft.Ow
 C:\Users\user\Desktop\Modern Banquet Hall\ModernHall\ModernHall\obj\Debug\ModernHall.csprojResolveAssemblyReference.cache
 C:\Users\user\Desktop\Modern Banquet Hall\ModernHall\ModernHall\obj\Debug\ModernHall.dll
 C:\Users\user\Desktop\Modern Banquet Hall\ModernHall\ModernHall\obj\Debug\ModernHall.pdb
+C:\Users\YOUSUF-PC\Documents\GitHub\ModernBanquet\ModernHall\obj\Debug\ModernHall.csprojResolveAssemblyReference.cache
+C:\Users\YOUSUF-PC\Documents\GitHub\ModernBanquet\ModernHall\obj\Debug\ModernHall.dll
+C:\Users\YOUSUF-PC\Documents\GitHub\ModernBanquet\ModernHall\obj\Debug\ModernHall.pdb

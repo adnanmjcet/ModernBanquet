@@ -1,15 +1,12 @@
-﻿using ModernHall.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace ModernHall.Controllers
 {
     public class UserAccountController : Controller
     {
-        ModernHallEntities _dbContext = new ModernHallEntities();
+        ModernHallEntities _dbContext = new ModernHallEntities1();
         // GET: UserAccount
         public ActionResult Index()
         {
@@ -21,6 +18,7 @@ namespace ModernHall.Controllers
         {
             var user = new User
             {
+              
                 Name = model.Name,
                 EmailID = model.EmailID,
                 Mobile = model.Mobile,
