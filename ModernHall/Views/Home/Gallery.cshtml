@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/vendor/jquery/jquery.min.js"></script>
+
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                    <li class="active">Gallery</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Image Gallery</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="row">
+    <div class="Container">
+
+
+        <!-- Insert to your webpage where you want to display the slider -->
+        <div id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 102px;">
+            <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                <ul class="amazingslider-slides" style="display:none;">
+                    <li>
+                        <img src="~/images/20170327_191954.jpg" alt="20170327_191954" title="20170327_191954" />
+                    </li>
+                    <li>
+                        <img src="~/images/20170327_192134.jpg" alt="20170327_192134" title="20170327_192134" />
+                    </li>
+                    <li>
+                        <img src="~/images/20170327_192515.jpg" alt="20170327_192515" title="20170327_192515" />
+                    </li>
+                    <li>
+                        <img src="~/images/20170327_192539.jpg" alt="20170327_192539" title="20170327_192539" />
+                    </li>
+                    <li>
+                        <img src="~/images/DSC_5685.JPG" alt="DSC_5685" title="DSC_5685" />
+                    </li>
+                    <li>
+                        <img src="~/images/DSC_5723.JPG" alt="DSC_5723" title="DSC_5723" />
+                    </li>
+                    <li>
+                        <img src="~/images/DSC_5746.JPG" alt="DSC_5746" title="DSC_5746" />
+                    </li>
+                    <li>
+                        <img src="~/images/DSC_5829.JPG" alt="DSC_5829" title="DSC_5829" />
+                    </li>
+                    <li>
+                        <img src="~/images/DSC_5834.JPG" alt="DSC_5834" title="DSC_5834" />
+                    </li>
+                </ul>
+                <ul class="amazingslider-thumbnails" style="display:none;">
+                    <li><img src="~/images/20170327_191954-tn.jpg" alt="20170327_191954" title="20170327_191954" /></li>
+                    <li><img src="~/images/20170327_192134-tn.jpg" alt="20170327_192134" title="20170327_192134" /></li>
+                    <li><img src="~/images/20170327_192515-tn.jpg" alt="20170327_192515" title="20170327_192515" /></li>
+                    <li><img src="~/images/20170327_192539-tn.jpg" alt="20170327_192539" title="20170327_192539" /></li>
+                    <li><img src="~/images/DSC_5685-tn.JPG" alt="DSC_5685" title="DSC_5685" /></li>
+                    <li><img src="~/images/DSC_5723-tn.JPG" alt="DSC_5723" title="DSC_5723" /></li>
+                    <li><img src="~/images/DSC_5746-tn.JPG" alt="DSC_5746" title="DSC_5746" /></li>
+                    <li><img src="~/images/DSC_5829-tn.JPG" alt="DSC_5829" title="DSC_5829" /></li>
+                    <li><img src="~/images/DSC_5834-tn.JPG" alt="DSC_5834" title="DSC_5834" /></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- End of body section HTML codes -->
+    </div>
+</div>
+

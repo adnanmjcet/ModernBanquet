@@ -1,0 +1,155 @@
+﻿@{
+    var user = Session["UserID"];
+    ViewBag.Title = "BookNow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div role="main" class="main">
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                        <li class="active">BOOK NOW</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Book Now</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="mb-sm"><strong>Three</strong> Plans</h4>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="pricing-table">
+                <div class="col-md-4 col-sm-6">
+                    <div class="plan">
+                        <h3>Executive<span>&#8377; 25k</span></h3>
+                        @if (user != null)
+                        {
+                            <a class="btn btn-lg btn-primary" href="@Url.Action("Index", "Booking", new { packageType = "1" })">Book Now</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-lg btn-primary" href="@Url.Action("Index","UserAccount")">Sign up</a>
+                        }
+
+                        <ul>
+                            <li>Crockery</li>
+                            <li>Cutlery</li>
+                            <li>Furniture</li>
+                            <li>Electrical</li>
+                            <li>Decoration</li>
+                            <li>Readymade</li>
+                            <li>Stages</li>
+                            <li>Meter Consumption</li>
+                            <li>Butlers & Bohis</li>
+                            <li>Only Chairs , without covers</li>
+
+                            <div class="alert alert-info">
+
+                                <p>
+                                    Note this package is recommended for maximum 100 person..
+                                </p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 center">
+                    <div class="plan most-popular">
+                        <div class="plan-ribbon-wrapper"><div class="plan-ribbon">Popular</div></div>
+                        <h3>Royal<span>&#8377; 30k</span></h3>
+                        @if (user != null)
+                        {
+                            <a class="btn btn-lg btn-primary" href="@Url.Action("Index", "Booking", new { packageType = "2" })">Book Now</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-lg btn-primary" href="@Url.Action("Index","UserAccount")">Sign up</a>
+                        }
+                        <ul>
+                            <li>Crockery</li>
+                            <li>Cutlery</li>
+                            <li>Furniture</li>
+                            <li>Electrical</li>
+                            <li>Decoration</li>
+                            <li>Readymade</li>
+                            <li>Stages</li>
+                            <li>Meter Consumption</li>
+                            <li>Butlers & Bohis</li>
+                            <li>LED lights on stage</li>
+                            <li>Chairs with covers</li>
+                            <li>Live CCTV axist for family & friends</li>
+                            <li>Special deewan chair for couple</li>
+
+                            <div class="alert alert-info">
+
+                                <p>
+                                    Note this package is recommended for maximum 300 person..
+                                </p>
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="plan">
+                        <h3>Premium<span>&#8377; 25k</span></h3>
+                        @if (user != null)
+                        {
+                            <a class="btn btn-lg btn-primary" href="@Url.Action("Index", "Booking", new { packageType = "3" })">Book Now</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-lg btn-primary" href="@Url.Action("Index","UserAccount")">Sign up</a>
+                        }
+                        <ul>
+                            <li>Crockery</li>
+                            <li>Cutlery</li>
+                            <li>Furniture</li>
+                            <li>Electrical</li>
+                            <li>Decoration</li>
+                            <li>Readymade</li>
+                            <li>Stages</li>
+                            <li>Meter Consumption</li>
+                            <li>Butlers & Bohis</li>
+                            <li>Chairs with covers</li>
+
+                            <div class="alert alert-info">
+
+                                <p>
+                                    Note this package is recommended for maximum 200 person..
+                                </p>
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="alert alert-warning fade in nomargin  col-md-6 col-md-offset-3">
+            <h4>NOTE!</h4>
+            <p>
+                <ul>
+                    <li>Diesel For A/C Is Not Included In The Package.</li>
+                    <li>All Kind Of Disposable Items Should Be Arranged By The Party/Host</li>
+                    <li>Extra Charges: Landscaping, Original Flowers, Extra Electrical Decoration</li>
+
+                </ul>
+            </p>
+        </div>
+
+    </div>
+</div>
+
