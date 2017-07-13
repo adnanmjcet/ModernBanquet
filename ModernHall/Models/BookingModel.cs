@@ -12,7 +12,7 @@ namespace ModernHall.Models
         {
             BookingList = new List<BookingModel>();
         }
-        public long Id { get; set; }
+        public int Id { get; set; }
         public Nullable<long> UserID { get; set; }
         [Required]
         public string Title { get; set; }
