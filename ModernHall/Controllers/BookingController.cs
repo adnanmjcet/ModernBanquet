@@ -10,7 +10,7 @@ namespace ModernHall.Controllers
     public class BookingController : Controller
     {
         // GET: Booking
-        ModernHallEntities dbContext = new ModernHallEntities();
+        ModernHallEntities1 dbContext = new ModernHallEntities1();
         public ActionResult Index(int? packageType)
         {
             var userID = Session["UserID"];
@@ -35,9 +35,9 @@ namespace ModernHall.Controllers
                 Location = model.Location,
                 Mobile = model.Mobile,
                 CreatedBy = userID,
-                UserID=userID,
+                UserID = userID,
                 Createdon = DateTime.Now,
-                PackageType = model.PackageType
+                PackageTypeId = model.PackageType
             };
             dbContext.Bookings.Add(booking);
             dbContext.SaveChanges();
@@ -93,7 +93,7 @@ namespace ModernHall.Controllers
                     Title = x.Title,
                     EventDescription = x.EventDescription,
                     BookingDate = x.BookingDate.Value,
-                    PackageType = x.PackageType,
+                    PackageType = x.PackageTypeId,
                     Mobile = x.Mobile,
                 }).ToList();
             }
@@ -105,7 +105,7 @@ namespace ModernHall.Controllers
                     Title = x.Title,
                     EventDescription = x.EventDescription,
                     BookingDate = x.BookingDate.Value,
-                    PackageType = x.PackageType,
+                    PackageType = x.PackageTypeId,
                     Mobile = x.Mobile,
                    
                 }).ToList();
